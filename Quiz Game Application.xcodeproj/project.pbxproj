@@ -13,6 +13,7 @@
 		40769C05288EC6C000899702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40769C03288EC6C000899702 /* Main.storyboard */; };
 		40769C07288EC6C200899702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40769C06288EC6C200899702 /* Assets.xcassets */; };
 		40769C0A288EC6C200899702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40769C08288EC6C200899702 /* LaunchScreen.storyboard */; };
+		40769C12288ECAD500899702 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40769C11288ECAD500899702 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		40769C06288EC6C200899702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40769C09288EC6C200899702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40769C0B288EC6C200899702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40769C11288ECAD500899702 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				40769C06288EC6C200899702 /* Assets.xcassets */,
 				40769C08288EC6C200899702 /* LaunchScreen.storyboard */,
 				40769C0B288EC6C200899702 /* Info.plist */,
+				40769C11288ECAD500899702 /* GameViewController.swift */,
 			);
 			path = "Quiz Game Application";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40769C12288ECAD500899702 /* GameViewController.swift in Sources */,
 				40769C02288EC6C000899702 /* ViewController.swift in Sources */,
 				40769BFE288EC6C000899702 /* AppDelegate.swift in Sources */,
 				40769C00288EC6C000899702 /* SceneDelegate.swift in Sources */,

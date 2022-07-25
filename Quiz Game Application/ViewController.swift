@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let a = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func startGame() {
+        let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)        
+    }
+    
 }
-
