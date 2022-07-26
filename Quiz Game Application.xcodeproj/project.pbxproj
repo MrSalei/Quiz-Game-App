@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402C3874288FDF3500E0A1D5 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C3873288FDF3500E0A1D5 /* Answer.swift */; };
+		402C3876288FDF6300E0A1D5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C3875288FDF6300E0A1D5 /* Question.swift */; };
+		402C3879288FE1B400E0A1D5 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C3878288FE1B400E0A1D5 /* Randomizer.swift */; };
 		40769BFE288EC6C000899702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40769BFD288EC6C000899702 /* AppDelegate.swift */; };
 		40769C00288EC6C000899702 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40769BFF288EC6C000899702 /* SceneDelegate.swift */; };
 		40769C02288EC6C000899702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40769C01288EC6C000899702 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		402C3873288FDF3500E0A1D5 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		402C3875288FDF6300E0A1D5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		402C3878288FE1B400E0A1D5 /* Randomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
 		40769BFA288EC6C000899702 /* Quiz Game Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Game Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40769BFD288EC6C000899702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40769BFF288EC6C000899702 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402C3870288FDEAB00E0A1D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40769C11288ECAD500899702 /* GameViewController.swift */,
+				40769C01288EC6C000899702 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		402C3871288FDEBD00E0A1D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40769C08288EC6C200899702 /* LaunchScreen.storyboard */,
+				40769C03288EC6C000899702 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		402C3872288FDED100E0A1D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				402C3877288FE1A400E0A1D5 /* Helpers */,
+				402C3873288FDF3500E0A1D5 /* Answer.swift */,
+				402C3875288FDF6300E0A1D5 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402C3877288FE1A400E0A1D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				402C3878288FE1B400E0A1D5 /* Randomizer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		40769BF1288EC6C000899702 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +100,13 @@
 		40769BFC288EC6C000899702 /* Quiz Game Application */ = {
 			isa = PBXGroup;
 			children = (
+				402C3872288FDED100E0A1D5 /* Models */,
+				402C3871288FDEBD00E0A1D5 /* Views */,
+				402C3870288FDEAB00E0A1D5 /* Controllers */,
 				40769BFD288EC6C000899702 /* AppDelegate.swift */,
 				40769BFF288EC6C000899702 /* SceneDelegate.swift */,
-				40769C01288EC6C000899702 /* ViewController.swift */,
-				40769C03288EC6C000899702 /* Main.storyboard */,
 				40769C06288EC6C200899702 /* Assets.xcassets */,
-				40769C08288EC6C200899702 /* LaunchScreen.storyboard */,
 				40769C0B288EC6C200899702 /* Info.plist */,
-				40769C11288ECAD500899702 /* GameViewController.swift */,
 			);
 			path = "Quiz Game Application";
 			sourceTree = "<group>";
@@ -143,8 +184,11 @@
 			files = (
 				40769C12288ECAD500899702 /* GameViewController.swift in Sources */,
 				40769C02288EC6C000899702 /* ViewController.swift in Sources */,
+				402C3874288FDF3500E0A1D5 /* Answer.swift in Sources */,
+				402C3876288FDF6300E0A1D5 /* Question.swift in Sources */,
 				40769BFE288EC6C000899702 /* AppDelegate.swift in Sources */,
 				40769C00288EC6C000899702 /* SceneDelegate.swift in Sources */,
+				402C3879288FE1B400E0A1D5 /* Randomizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
