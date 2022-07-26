@@ -73,6 +73,30 @@ extension Question {
             Answer(text: "8", correct: false),
             Answer(text: "9", correct: false),
             Answer(text: "10", correct: false)
+        ]),
+        Question(text: "How many blue lines on the USA flag?", answers: [
+            Answer(text: "6", correct: false),
+            Answer(text: "7", correct: false),
+            Answer(text: "13", correct: false),
+            Answer(text: "0", correct: true)
+        ]),
+        Question(text: "Who from the given characters is Harry Potter's enemy?", answers: [
+            Answer(text: "Ron Weasley", correct: false),
+            Answer(text: "Neville Longbottom", correct: false),
+            Answer(text: "Draco Malfoy", correct: true),
+            Answer(text: "Hermione Granger", correct: false)
+        ]),
+        Question(text: "What bird is the smallest one?", answers: [
+            Answer(text: "Fly", correct: false),
+            Answer(text: "Colibri", correct: true),
+            Answer(text: "Parrot", correct: false),
+            Answer(text: "Sparrow", correct: false)
+        ]),
+        Question(text: "Which planet is the hottest?", answers: [
+            Answer(text: "Venus", correct: true),
+            Answer(text: "Sun", correct: false),
+            Answer(text: "Jupiter", correct: false),
+            Answer(text: "Mars", correct: false)
         ])
     ]
 }
