@@ -27,18 +27,32 @@ class ViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)        
     }
-        
+    @IBAction func instButtonPressed(_ sender: Any) {
+        if let url = URL(string: "https://instagram.com/92luqrri"), !url.absoluteString.isEmpty
+        {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    @IBOutlet weak var instButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var rulesButton: UIButton!
+    @IBOutlet weak var exitButton: UIButton!
+    
     private let colors = Colors()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refresh()
+        setup()
     }
     
-    func refresh() {
+    private func setup() {
         view.backgroundColor = UIColor.clear
         let backgroundLayer = colors.gl
         backgroundLayer!.frame = view.frame
         view.layer.insertSublayer(backgroundLayer!, at: 0)
+        instButton.layer.cornerRadius = instButton.frame.size.height / 2
+        startButton.layer.cornerRadius = startButton.frame.size.height / 2
+        rulesButton.layer.cornerRadius = rulesButton.frame.size.height / 2
+        exitButton.layer.cornerRadius = exitButton.frame.size.height / 2
     }
 }

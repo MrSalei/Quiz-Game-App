@@ -13,11 +13,21 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var label: UILabel!
     @IBOutlet var table: UITableView!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBAction func backButtonPressed(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "menu") as! ViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    @IBOutlet weak var backButton: UIButton!
     
     private var questions: [Question] = [], currentQuestion: Question?, questionIndex = 0, failures = 0, attempts = 1, used: [Int] = [], timer: Timer?, timeLeft = 60
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    private func setup() {
         table.delegate = self
         table.dataSource = self
         setupQuestions(with: Question.questions)
@@ -25,6 +35,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         used.append(questionIndex)
         configureUI(question: questions[questionIndex])
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+        backButton.contentHorizontalAlignment = .left
+    }
+    
+    private func setupQuestions(with questions: [Question]) {
+        self.questions = questions
     }
     
     private func configureUI(question: Question) {
@@ -52,10 +67,6 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func checkAnswer(answer: Answer, question: Question) -> Bool {
         question.answers.contains(where: { $0.text == answer.text }) && answer.correct
-    }
-    
-    private func setupQuestions(with questions: [Question]) {
-        self.questions = questions
     }
     
     //TABLE VIEW FUNCTIONS
