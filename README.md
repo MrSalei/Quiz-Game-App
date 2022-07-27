@@ -5,6 +5,9 @@ Quiz Game Application is an API, which was built to provide an entertaining test
 ## Features
 
 - Multiscreen.
-- Table View.
+- MVC.
+- Gradient view background.
+- Timer.
+- Shaking animation.
 - UIAlertController.
 - UIAlertAction.
