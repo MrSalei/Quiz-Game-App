@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func rulesButtonPressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Rules", message: "You have to answer 10 questions that relate to different topics. If you get it wrong twice, you will be knocked out.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Rules", message: "You have to answer 10 questions that relate to different topics in 60 seconds. If you get it wrong twice, you will be knocked out.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Got it", style: .cancel, handler: nil))
         present(alert, animated: true)
     }
