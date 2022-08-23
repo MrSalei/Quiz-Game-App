@@ -14,9 +14,10 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var table: UITableView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBAction func backButtonPressed(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "menu") as! ViewController
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+        //let vc = self.storyboard?.instantiateViewController(identifier: "menu") as! ViewController
+        //vc.modalPresentationStyle = .fullScreen
+        //self.present(vc, animated: true)
+        dismiss(animated: true, completion: nil)
     }
     @IBOutlet weak var backButton: UIButton!
     
@@ -115,9 +116,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func addActionBackToMenu(alert: UIAlertController) {
         alert.addAction(UIAlertAction(title: "Back to menu", style: .default, handler: {_ in
-            let vc = self.storyboard?.instantiateViewController(identifier: "menu") as! ViewController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+            self.dismiss(animated: true, completion: nil)
         }))
     }
     
